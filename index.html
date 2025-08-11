@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Stories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pawfect Stories</h1>
+        <p><strong>Meet our adorable fictional friends looking for a loving home 💕</strong></p>
+    </header>
+
+    <div class="container">
+        <div class="pet-card">
+            <img src="milo.jpg" alt="Milo the Cat">
+            <div class="pet-info">
+                <h2>Milo</h2>
+                <p><strong>Milo is a curious kitten who believes every shoelace is a snake waiting to be defeated. He loves napping in laundry baskets and is a professional purr-machine.</strong></p>
+            </div>
+        </div>
+
+        <div class="pet-card">
+            <img src="Bellaimg.jpg" alt="Bella the Dog">
+            <div class="pet-info">
+                <h2>Bella</h2>
+                <p><strong>Bella is a golden retriever with a heart of gold. She enjoys long walks, belly rubs, and pretending she doesn’t understand the word “no.”</strong></p>
+            </div>
+        </div>
+
+        <div class="pet-card">
+            <img src="luna.jpg" alt="Luna the Cat">
+            <div class="pet-info">
+                <h2>Luna</h2>
+                <p><strong>Luna is a gentle, moon-eyed feline who enjoys staring out the window at 3 a.m., plotting against the neighborhood squirrels.</strong></p>
+            </div>
+        </div>
+
+        <div class="pet-card">
+            <img src="max.jpg" alt="Max the Dog">
+            <div class="pet-info">
+                <h2>Max</h2>
+                <p><strong>Max is a playful beagle with floppy ears and an unstoppable tail wag. His superpower is sniffing out snacks from a mile away.</strong></p>
+            </div>
+        </div>
+    </div>
+
+ <section id="contact" style="padding: 30px; background-color: #fffaf0; text-align: center;">
+    <h2 style="font-family: 'Pacifico', cursive; font-size: 2rem; margin-bottom: 10px;">Contact Us</h2>
+    <p style="font-size: 1rem; color: #555; margin-bottom: 20px;">
+        Have questions or want to inquire about adoption? Fill out the form below.
+    </p>
+
+   
+    <div id="contact-box" style="max-width: 500px; margin: auto; text-align: left;">
+        <form id="contact-form" action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required style="width: 95%; padding: 10px; margin: 8px 0;"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 95%; padding: 10px; margin: 8px 0;"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required style="width: 95%; padding: 10px; margin: 8px 0;"></textarea><br>
+
+            <button type="submit" style="background-color: #ff6f61; color: white; padding: 12px 20px; border: none; cursor: pointer; font-size: 1rem; border-radius: 5px;">
+                Send Inquiry
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer style=" color: black; padding: 15px; text-align: center; font-size: 1.1rem; font-weight: bold; letter-spacing: 1px;">
+    <p>NOTE: THIS IS A FICTIONAL ADOPTION SITE CREATED FOR FUN. NO PETS ARE ACTUALLY AVAILABLE 🐾</p>
+    <p>&copy; 2025 PAWFECT STORIES | BY SINGH RAHUL </p>
+</footer>
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        document.getElementById("contact-box").innerHTML = "<h3 style='color:brown; text-align:center;'>Thanks! We’ve received your message 🐾</h3>";
+    });
+</script>
+
+ 
+</body>
+</html>
